@@ -1,3 +1,11 @@
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import pkg from "pg"; // Importando o pacote pg como um módulo padrão
+const { Client } = pkg; // Desestruturando Client do pacote
+
+const app = express();
+
 app.use(express.json({ limit: '10mb' }));
 app.use(cors());
 app.use(helmet());
