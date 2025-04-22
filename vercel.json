@@ -7,6 +7,10 @@
     }
   ],
   "routes": [
+    {
+      "src": "(.*)",
+      "dest": "/servidor_vercel.js"
+    },
     { "src": "/login", "dest": "/servidor_vercel.js" },
     { "src": "/procura", "dest": "/servidor_vercel.js" },
     { "src": "/sapatos", "dest": "/servidor_vercel.js" },
@@ -14,3 +18,4 @@
     { "src": "/vendas", "dest": "/servidor_vercel.js" }
   ]
 }
+  
