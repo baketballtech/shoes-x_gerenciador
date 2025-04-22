@@ -3,7 +3,6 @@ const cors = require("cors");
 const helmet = require("helmet");
 const { Client } = require("pg");
 const bodyParser = require("body-parser");
-const serverless = require("serverless-http");
 
 const app = express();
 app.use(express.json({ limit: "10mb" }));
@@ -113,5 +112,4 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// Exporta o app para funcionar na Vercel
-module.exports = serverless(app);
+export default app
