@@ -8,7 +8,6 @@ import bodyParser from "body-parser"
 
 
 const {Client}=pkg
-let porta=4000
 
 let app=express()
 app.use(express.json({ limit: '10mb' }));
